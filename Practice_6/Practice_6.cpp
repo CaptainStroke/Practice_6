@@ -25,22 +25,132 @@
 // ■ вывести все нечетные числа из диапазона.
 // ■ вывести все числа, кратные семи.
 
-#include <iostream>
-using namespace std;
-int main()
-{
-	cout << "Enter 2 numbers\n";
-	int a;
-	int b;
-	cin >> a;
-	cin >> b;
-	
-}
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	cout << "Enter 2 numbers\n";
+//	int a;
+//	int b;
+//	int c;
+//	int d;
+//	cin >> a;
+//	cin >> b;
+//	if (a > b) // For proper input 
+//	{
+//		c = a;
+//		a = b;
+//		b = c;
+//		//cout << a << " upside " << b;
+//	}
+//	while (a < b)
+//	{
+//		cout << a << ", ";
+//		a++;
+//	}
+//	cout << b << ".\n";
+//}
+
+//#include <iostream> //Odd numbers
+//using namespace std;
+//int main()
+//{
+//	cout << "Enter 2 numbers\n";
+//	int a;
+//	int b;
+//	int c;
+//	cin >> a;
+//	cin >> b;
+//	if (a > b) // For proper input 
+//	{
+//		c = a;
+//		a = b;
+//		b = c;
+//		//cout << a << " upside " << b;
+//	}
+//	cout << "Odd numbers - ";
+//	c = 2;
+//	while (a <= b)
+//	{
+//		(a % c != 0) ? cout << a << ", " : cout << "";
+//		
+//		a++;
+//	}
+//}
+
+//#include <iostream> // Even numbers
+//using namespace std;
+//int main()
+//{
+//	cout << "Enter 2 numbers\n";
+//	int a;
+//	int b;
+//	int c;
+//	cin >> a;
+//	cin >> b;
+//	if (a > b) // For proper input 
+//	{
+//		c = a;
+//		a = b;
+//		b = c;
+//		//cout << a << " upside " << b;
+//	}
+//	cout << "Divided by number you enter, or just even if you enter 2 - ";
+//	cin >> c;
+//	while (a <= b)
+//	{
+//		(a % c == 0) ? cout << a << ", " : cout << "";
+//		
+//		a++;
+//	}
+//}
 
 //Задание 3. Пользователь вводит две границы диапазона. Посчитать сумму всех чисел диапазона.
 
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	cout << "Enter 2 numbers\n";
+//	int a;
+//	int b;
+//	int c;
+//	cin >> a;
+//	cin >> b;
+//	if (a > b) // For proper input 
+//	{
+//		c = a;
+//		a = b;
+//		b = c;
+//	}
+//	c = 0;
+//	while (a <= b)
+//	{
+//		c = c + a;
+//		a++;
+//	}
+//	cout << c << " Sum";
+//}
+
 //Задание 4. Пользователь с клавиатуры вводит числа. 
 //Посчитать их сумму и вывести на экран, как только пользователь введет ноль.
+
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	cout << "Enter number \n";
+//	int a;
+//	cin >> a;
+//	int b;
+//	b = 0;
+//	while (a != 0)
+//	{
+//		b = b + a;
+//		cin >> a;
+//	}
+//	cout << b << " Sum";
+//}
 
 //Задания для самостоятельной работы 2
 //Задание 1. Написать игру «Угадай число». Программа загадывает число в диапазоне от 1 до 500.
