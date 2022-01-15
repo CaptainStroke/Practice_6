@@ -3,27 +3,39 @@
 
 //Задание 1. Вывести на экран все числа от нуля до введенного пользователем числа.
 
-#include <iostream>
-using namespace std;
-int main()
-{
-	cout << "Enter number ";
-	int goal;
-	cin >> goal;
-	int number = 0;
-	while (number < goal)
-	{
-		cout << number << ", ";
-		number++;
-	}
-	cout <<goal << ".\n";
-}
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	cout << "Enter number ";
+//	int goal;
+//	cin >> goal;
+//	int number = 0;
+//	while (number < goal)
+//	{
+//		cout << number << ", ";
+//		number++;
+//	}
+//	cout <<goal << ".\n";
+//}
 
 //Задание 2. Пользователь вводит две границы диапазона, вывести на экран все числа из этого диапазона.
 //Предусмотреть, чтобы пользователь мог вводить границы диапазона в произвольном порядке.
 // ■ вывести все четные числа из диапазона.
 // ■ вывести все нечетные числа из диапазона.
 // ■ вывести все числа, кратные семи.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Enter 2 numbers\n";
+	int a;
+	int b;
+	cin >> a;
+	cin >> b;
+	
+}
 
 //Задание 3. Пользователь вводит две границы диапазона. Посчитать сумму всех чисел диапазона.
 
