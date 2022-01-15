@@ -159,4 +159,34 @@
 //попыток угадано число, сколько времени это заняло.
 //Предусмотреть выход по 0, в случае, если пользователю надоело угадывать число.
 
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main()
+{
+	srand(time(NULL));
+	int number = rand() % 500 +1;
+	time_t start = time(0);
+	//cout << number << "\n"; // Reveal random number
+	int guess = 0; 
+	int Try = 0; // Counter for tries
+	while (guess != number)
+	{
+		cin >> guess;
+		if (guess > number)
+		{
+			cout << " Higher \n";
+		}
+		else if (guess < number)
+		{
+			cout << " Lower \n";
+		}
+		Try++;
+	}
+	cout << "You did it in " << Try << " tries and ";
+	time_t end = time(0);
+	double time = difftime(end, start);
+	cout << time << " seconds";
+}
+
 // Задание 2. Написать программу - конвертер валют.Реализовать общение с пользователем через меню.
