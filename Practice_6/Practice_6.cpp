@@ -195,77 +195,78 @@
 using namespace std;
 int main()
 {
-	float money=100;
 	float uah;
-	float usd;
+	float usd = 1;
 	float rub;
 	float eur;
 	int choice;
-	int choice2;
-	usd = money; 
-	uah = money / 0.036;
-	eur = money / 1.14;
-	rub = money / 0.013;
+	float change;; 
+	uah = usd / 0.036;
+	eur = usd / 1.14;
+	rub = usd / 0.013;
 	cout.setf(ios::fixed);
-	cout.precision(4);
-	cout << "Currency exchange. 100 USD\n"; 
+	cout.precision(2);
+	/*cout << "Currency exchange. 100 USD\n"; 
 	cout << "CURRENCY  | BUY | SELL \n";
 	cout << " HRYVNYA  | " << uah << " | " << uah + 0.01 * uah << "\n";
 	cout << "US Dollar | " << usd << " | " << usd + 0.01 * usd << "\n";
 	cout << "   EURO   | " << eur << " | " << eur + 0.01 * eur << "\n";
 	cout << "   RUB    | " << rub << " | " << rub + 0.01 * rub << "\n";
-	cout << "Choose your currency from list : \n";
+	cout << "Choose your currency from list : \n";*/
 	cout << "1 - USD | 2 - EUR | 3 - RUB | 4 - UAH \n";
 	cin >> choice;
+	cout << "Enter amount of money in other currencies\n";
+	cin >> change;
+	
 	if (choice == 1)
 	{
-		usd = money;
+		usd = 1/change;
 		uah = uah/usd;
 		eur = eur/usd;
 		rub = rub/usd;
-		cout << "Currency - USD\n";
+		cout << "To change - "<< change <<" USD\n";
 		cout << "CURRENCY  | BUY | SELL \n";
 		cout << " HRYVNYA  | " << uah << " | " << uah + 0.01 * uah << "\n";
-		cout << "US Dollar | " << usd << " | " << usd + 0.01 * usd << "\n";
+		//cout << "US Dollar | " << usd << " | " << usd + 0.01 * usd << "\n";
 		cout << "   EURO   | " << eur << " | " << eur + 0.01 * eur << "\n";
 		cout << "   RUB    | " << rub << " | " << rub + 0.01 * rub << "\n";
 		//cout << "1 - SELL | 2 - BUY";
 	}
 	else if (choice == 2)
 	{
-		usd = money/eur;
-		uah = uah/eur;
-		rub = rub / eur;
+		usd = change * usd / eur;
+		uah = change * uah / eur;
+		rub = change * rub / eur;
 		eur = eur / eur;
-		cout << "Currency - EUR\n";
+		cout << "To change " << change << " EUR\n";
 		cout << "CURRENCY  | BUY | SELL \n";
 		cout << " HRYVNYA  | " << uah << " | " << uah + 0.01 * uah << "\n";
 		cout << "US Dollar | " << usd << " | " << usd + 0.01 * usd << "\n";
-		cout << "   EURO   | " << eur << " | " << eur + 0.01 * eur << "\n";
+		//cout << "   EURO   | " << eur << " | " << eur + 0.01 * eur << "\n";
 		cout << "   RUB    | " << rub << " | " << rub + 0.01 * rub << "\n";
 		//cout << "1 - SELL | 2 - BUY";
 	}
 	else if (choice == 3)
 	{
-		usd = money / rub;
-		uah = uah / rub;
-		eur = eur / rub;
+		usd = change * usd / rub;
+		uah = change * uah / rub;
+		eur = change * eur / rub;
 		rub = rub / rub;
-		cout << "Currency - RUB\n";
+		cout << "To change " << change << " RUB\n";
 		cout << "CURRENCY  | BUY | SELL \n";
 		cout << " HRYVNYA  | " << uah << " | " << uah + 0.01 * uah << "\n";
 		cout << "US Dollar | " << usd << " | " << usd + 0.01 * usd << "\n";
 		cout << "   EURO   | " << eur << " | " << eur + 0.01 * eur << "\n";
-		cout << "   RUB    | " << rub << " | " << rub + 0.01 * rub << "\n";
+		//cout << "   RUB    | " << rub << " | " << rub + 0.01 * rub << "\n";
 		//cout << "1 - SELL | 2 - BUY";
 	}
 	else if (choice == 4)
 	{
-		usd = money / uah;
-		eur = eur / uah;
-		rub = rub / uah;
+		usd = change * usd / uah;
+		eur = change * eur / uah;
+		rub = change * rub / uah;
 		uah = uah / uah;
-		cout << "Currency - USD\n";
+		cout << "To change " << change << " UAH\n";
 		cout << "CURRENCY  | BUY | SELL \n";
 		cout << " HRYVNYA  | " << uah << " | " << uah + 0.01 * uah << "\n";
 		cout << "US Dollar | " << usd << " | " << usd + 0.01 * usd << "\n";
